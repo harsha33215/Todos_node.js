@@ -1,0 +1,25 @@
+Send Request
+GET http://localhost:3000/todos/
+
+###
+Send Request
+GET http://localhost:3000/todos/1/
+
+###
+Send Request
+POST http://localhost:3000/todos/
+
+Content-Type: application/json
+
+ {
+    "name" : 'Learn React'
+ }
+
+ ###
+ PUT http://localhost:3000/todos/1/
+
+Content-Type: application/json
+
+{
+    "name" : "Learn Node.js"
+}
