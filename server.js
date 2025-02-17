@@ -4,9 +4,12 @@ const path = require("path");
 const sqlite3 = require("sqlite3");
 const { get } = require("http");
 const exp = require("constants");
+const cors = require("cors")
 
 const app = express();
 app.use(express.json());
+app.use(cors());
+
 
 const dbPath = path.join(__dirname, "todo.db");
 
